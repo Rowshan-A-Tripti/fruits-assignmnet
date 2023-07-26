@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruits</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary':'#ea580c',
+            'bike-primary-bg': '#ea580c',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+     .font-lato{
+      font-family: 'Lato', sans-serif;
+     }
+  </style>
+</head>
+<body>
+  <header class="container mx-auto lg:w-[90%] ">
+    <nav
+    class="my-5 flex h-16 items-center justify-around gap-20 rounded-full lg:justify-around lg:gap-24 lg:bg-red-400"
+  >
+    <div class="hidden lg:block">
+      <ul class="flex text-base text-white">
+        <li class="mr-5"><a href="#">Home</a></li>
+        <li class="mr-5"><a href="#">About Us</a></li>
+        <li class="mr-5"><a href="#">Shop</a></li>
+        <li class="mr-5"><a href="#">All Fruit</a></li>
+      </ul>
+    </div>
+    <div class="flex items-center gap-4">
+      <img src="./images/logo.png" alt="" class="w-8 lg:w-10" />
+      <h3 class="text-base font-bold lg:text-3xl lg:text-white">
+        Fruit Burst
+      </h3>
+    </div>
+    <div class="flex items-center lg:block">
+      <input
+        type="text"
+        placeholder="Search here"
+        class="input h-[40px] w-[300px] rounded-full"
+      />
+      <i class="fa-solid fa-magnifying-glass relative right-8 text-[#121212]"></i>
+    </div>
+
+    <div class="drawer-end lg:hidden">
+      <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        
+        <label for="my-drawer-4" class="drawer-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-5 w-5 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </label>
+      </div>
+      <div class="drawer-side">
+        <label for="my-drawer-4" class="drawer-overlay"></label>
+        <ul class="menu h-full w-80 bg-base-200 p-4 text-base-content">
+          
+          <li class="mr-5"><a href="#">Home</a></li>
+          <li class="mr-5"><a href="#">About Us</a></li>
+          <li class="mr-5"><a href="#">Shop</a></li>
+          <li class="mr-5"><a href="#">All Fruit</a></li>
+          <li class="mr-5">
+            <div class="flex items-center lg:block">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input h-[40px] rounded-full"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass relative right-8 text-[#121212]"
+              ></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  -->
+  </nav>
+     
+        
+  </header>
+  <section class="w-[70%] h-[80%] mx-auto lg:w-[90%] ">
+      
+      
+    <div>
+      <div class="carousel w-full blende-darken">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-ghost bg-red-500 border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        
+        
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-ghost bg-red-500 border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+
+
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-ghost bg-red-500 border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+
+
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-ghost bg-red-500 border-none">SHop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+      </div>
+          
+    </div>
+    <div
+        class=" invisible relative -top-20 mx-auto flex w-[60%] justify-center gap-5 rounded-lg bg-white p-5 text-center shadow-[0_8px_60px_0_rgba(0,0,0,0.5)] lg:visible"
+      >
+        <!-- fruit -->
+
+        <div class="">
+          <img src="./images/fruit1.png" alt="" />
+          <p class="font-medium text-black">Grapes</p>
+        </div>
+        <div class="">
+          <img src="./images/fruit2.png" alt="" />
+          <p class="font-medium text-black">Orange</p>
+        </div>
+        <div class="">
+          <img src="./images/fruit3.png" alt="" />
+          <p class="font-medium text-black">Mango</p>
+        </div>
+        <div class="">
+          <img src="./images/fruit4.png" alt="" />
+          <p class="font-medium text-black">Strawberry</p>
+        </div>
+        <div class="">
+          <img src="./images/fruit5.png" alt="" />
+          <p class="font-medium text-black">Pomegranate</p>
+        </div>
+    </div>
+    
+
+    
+  </section>
+  <main>
+    <section class=" w-[70%] mx-auto lg:w-[90%]">
+      <div class="">
+        <div class="grid lg:flex lg:justify-between">
+          <div>
+            <h2 class=" mb-5 text-5xl font-bold">Deal of the day</h2>
+            <p class="text-left lg:w-2/3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="flex gap-5">
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div>
+              <span class="countdown font-mono text-4xl">
+                <span style="--value:28;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        
+        
+
+      
+        </div>
+        <div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="mx-auto w-[90%]">
+      <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="hero-content grid items-center justify-around lg:flex">
+              <div class="my-6 lg:mx-8">
+                <img src="./images/member1.png" />
+                <h3 class="font-bold text-2xl pt-5">Awlad Chowdhury</h3>
+                <p class="font-semibold text-xs pt-2">Fruits Expert</p>
+                <div class="flex justify-center p-5">
+                  <img src="./images/facebook.png"/>
+                  <img src="./images/likedin.png" />
+                  <img src="./images/twitter-3915176.png" />
+                </div>
+              </div>
+              <div class="my-6 lg:mx-8">
+                <img src="./images/member2.png" />
+                <h3 class="font-bold text-2xl pt-5">Safia Chowdhury</h3>
+                <p class="font-semibold text-xs pt-2">Fruits Expert</p>
+                <div class="flex justify-center p-5">
+                  <img src="./images/facebook.png"/>
+                  <img src="./images/likedin.png" />
+                  <img src="./images/twitter-3915176.png" />
+                  
+                </div>
+              </div>
+              <div class="my-6 lg:mx-8">
+                <img src="./images/member3.png" />
+                <h3 class="font-bold text-2xl pt-5">Rokib Chowdhury</h3>
+                <p class="font-semibold text-xs pt-2">Fruits Expert</p>
+                <div class="flex justify-center p-5">
+                  <img src="./images/facebook.png"/>
+                  <img src="./images/likedin.png" />
+                  <img src="./images/twitter-3915176.png" />
+                </div>
+              </div>
+              <div class="my-6 lg:mx-8">
+                <img src="./images/member4.png" />
+                <h3 class="font-bold text-2xl pt-5">Chaity chowdhury</h3>
+                <p class="font-semibold text-xs pt-2">Fruits Expert</p>
+                <div class="flex justify-center p-5">
+                  <img src="./images/facebook.png"/>
+                  <img src="./images/likedin.png" />
+                  <img src="./images/twitter-3915176.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      
+    </section>
+  </main>
+    
+</body>
+</html>
