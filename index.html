@@ -191,48 +191,266 @@
     
   </section>
   <main>
-    <section class=" w-[70%] mx-auto lg:w-[90%]">
-      <div class="">
-        <div class="grid lg:flex lg:justify-between">
-          <div>
-            <h2 class=" mb-5 text-5xl font-bold">Deal of the day</h2>
-            <p class="text-left lg:w-2/3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-          </div>
-          <div class="flex gap-5">
+    <section class="grid mx-auto w-[90%]">
+      <div class="grid justify-between lg:grid-cols-2">
+        <div class="space-y-3">
+          <h3
+            class="text-center text-4xl font-extrabold text-[#121212] lg:text-left">
+            Deal of the day
+          </h3>
+          <p class="font-medium text-[#12121299]">
+            Contrary to popular belief, is not simply random text. It has
+            roots in a piece of classical Latin literature from 45 BC, making
+            it over 2000 years old.
+          </p>
+        </div>
+        <div
+          class="flex items-center justify-center gap-5 text-center lg:justify-end">
+          <div class="flex items-center gap-5">
             <div>
-              <span class="countdown font-mono text-4xl">
-                <span style="--value:15;"></span>
-              </span>
-              days
-            </div> 
-            <div>
-              <span class="countdown font-mono text-4xl">
-                <span style="--value:10;"></span>
-              </span>
-              hours
-            </div> 
-            <div>
-              <span class="countdown font-mono text-4xl">
-                <span style="--value:24;"></span>
-              </span>
-              min
-            </div> 
-            <div>
-              <span class="countdown font-mono text-4xl">
-                <span style="--value:28;"></span>
-              </span>
-              sec
+              <h3 class="text-4xl font-extrabold text-[#121212]">29</h3>
+              <h3 class="font-medium text-[#12121299]">Days</h3>
             </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
           </div>
-        
-        
+          <div class="flex items-center gap-5">
+            <div>
+              <h3 class="text-4xl font-extrabold text-[#121212]">15</h3>
+              <h3 class="font-medium text-[#12121299]">Hours</h3>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="flex items-center gap-5">
+            <div>
+              <h3 class="text-4xl font-extrabold text-[#121212]">25</h3>
+              <h3 class="font-medium text-[#12121299]">Minutes</h3>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="">
+            <h3 class="text-4xl font-extrabold text-[#121212]">08</h3>
+            <h3 class="font-medium text-[#12121299]">Seconds</h3>
+          </div>
+        </div>
+      </div>
 
+      <div class="mt-12 grid justify-center gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-5 rounded-lg border border-[#1212121a] p-8 text-center">
+        
+          <img src="./images/fruit6.png" alt="" class="mx-auto" />
+          <h3 class="text-xl font-bold text-[#121212]">12.90$ - 18.85$</h3>
+          <hr />
+          <p class="text-base font-medium text-[#12121299]">Apples</p>
+          <div>
+            <img src="./images/5star.svg" alt="" class="mx-auto" />
+          </div>
+          <div>
+            
+            <button class="mt-5 text-lg font-bold text-[#f85559]"
+              onclick="my_modal_5.showModal()">
+            
+              Details
+            </button>
+            <dialog id="my_modal_5" class="modal modal-middle">
+              <form method="dialog" class="modal-box">
+                <img src="./images/fruit6.png" alt="" class="mx-auto" />
+                <h3 class="text-2xl font-extrabold text-[#121212]">Apples</h3>
+                <p class="text-base font-medium text-[#12121299] lg:my-3">
+                  Professional employees are there for you to pick the most
+                  <br />
+                  amazing and fresh fruits.
+                </p>
+                <img
+                  src="./images/5star.svg"
+                  alt=""
+                  class="mx-auto lg:my-3"
+                />
+                <div class="modal-action">
+          
+                  <div class="mx-auto">
+                    <button
+                      class="btn btn-active mr-4 border-[#F85559] bg-white text-[#F85559]"
+                    >
+                      Close
+                    </button>
+                    <button
+                      class="btn btn-active rounded-md border-none bg-[#F85559] px-4 text-xs capitalize text-white hover:bg-[#F85559]"
+                    >
+                      Shop Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+    
+        <div
+          class="space-y-5 rounded-lg border border-[#1212121a] p-8 text-center"
+        >
+          <img src="./images/fruit7.png" alt="" class="mx-auto" />
+          <h3 class="text-xl font-bold text-[#121212]">12.90$ - 18.85$</h3>
+          <hr />
+          <p class="text-base font-medium text-[#12121299]">Orange</p>
+          <div>
+            <img src="./images/5star.svg" alt="" class="mx-auto" />
+          </div>
+          <div>
+          
+            <button
+              class="mt-5 text-lg font-bold text-[#f85559]"
+              onclick="my_modal_7.showModal()"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_7" class="modal modal-middle">
+              <form method="dialog" class="modal-box">
+                <img src="./images/fruit7.png" alt="" class="mx-auto" />
+                <h3 class="text-2xl font-extrabold text-[#121212]">Orange</h3>
+                <p class="text-base font-medium text-[#12121299] lg:my-3">
+                  Professional employees are there for you to pick the most
+                  <br />
+                  amazing and fresh fruits.
+                </p>
+                <img
+                  src="./images/5star.svg"
+                  alt=""
+                  class="mx-auto lg:my-3"
+                />
+                <div class="modal-action">
+            
+                  <div class="mx-auto">
+                    <button
+                      class="btn btn-active mr-4 border-[#F85559] bg-white text-[#F85559]"
+                    >
+                      Close
+                    </button>
+                    <button
+                      class="btn btn-active rounded-md border-none bg-[#F85559] px-4 text-xs capitalize text-white hover:bg-[#F85559]"
+                    >
+                      Shop Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        <!-- Red Dragon -->
+        <div
+          class="space-y-5 rounded-lg border border-[#1212121a] p-8 text-center"
+        >
+          <img src="./images/fruit8.png" alt="" class="mx-auto" />
+          <h3 class="text-xl font-bold text-[#121212]">12.90$ - 18.85$</h3>
+          <hr />
+          <p class="text-base font-medium text-[#12121299]">Red Dragon</p>
+          <div>
+            <img src="./images/5star.svg" alt="" class="mx-auto" />
+          </div>
+          <div>
+        
+            <button
+              class="mt-5 text-lg font-bold text-[#f85559]"
+              onclick="my_modal_8.showModal()"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_8" class="modal modal-middle">
+              <form method="dialog" class="modal-box">
+                <img src="./images/fruit8.png" alt="" class="mx-auto" />
+                <h3 class="text-2xl font-extrabold text-[#121212]">
+                  Red Dragon
+                </h3>
+                <p class="text-base font-medium text-[#12121299] lg:my-3">
+                  Professional employees are there for you to pick the most
+                  <br />
+                  amazing and fresh fruits.
+                </p>
+                <img
+                  src="./images/5star.svg"
+                  alt=""
+                  class="mx-auto lg:my-3"
+                />
+                <div class="modal-action">
+        
+                  <div class="mx-auto">
+                    <button
+                      class="btn btn-active mr-4 border-[#F85559] bg-white text-[#F85559]"
+                    >
+                      Close
+                    </button>
+                    <button
+                      class="btn btn-active rounded-md border-none bg-[#F85559] px-4 text-xs capitalize text-white hover:bg-[#F85559]"
+                    >
+                      Shop Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
       
+        <div
+          class="space-y-5 rounded-lg border border-[#1212121a] p-8 text-center"
+        >
+          <img src="./images/fruit9.png" alt="" class="mx-auto" />
+          <h3 class="text-xl font-bold text-[#121212]">12.90$ - 18.85$</h3>
+          <hr />
+          <p class="text-base font-medium text-[#12121299]">Banana</p>
+          <div>
+            <img src="./images/5star.svg" alt="" class="mx-auto" />
+          </div>
+          <div>
+        
+            <button
+              class="mt-5 text-lg font-bold text-[#f85559]"
+              onclick="my_modal_9.showModal()"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_9" class="modal modal-middle">
+              <form method="dialog" class="modal-box">
+                <img src="./images/fruit9.png" alt="" class="mx-auto" />
+                <h3 class="text-2xl font-extrabold text-[#121212]">Banana</h3>
+                <p class="text-base font-medium text-[#12121299] lg:my-3">
+                  Professional employees are there for you to pick the most
+                  <br />
+                  amazing and fresh fruits.
+                </p>
+                <img
+                  src="./images/5star.svg"
+                  alt=""
+                  class="mx-auto lg:my-3"
+                />
+                <div class="modal-action">
+              
+                  <div class="mx-auto">
+                    <button
+                      class="btn btn-active mr-4 border-[#F85559] bg-white text-[#F85559]"
+                    >
+                      Close
+                    </button>
+                    <button
+                      class="btn btn-active rounded-md border-none bg-[#F85559] px-4 text-xs capitalize text-white hover:bg-[#F85559]"
+                    >
+                      Shop Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
         </div>
-        <div>
+      </div>
 
-        </div>
-
+  
+      <div>
+        <button
+          class="btn btn-active mx-auto my-10 block rounded-md border-none bg-[#F85559] px-4 text-xl capitalize text-white hover:bg-[#F85559]"
+        >
+          Shop All
+        </button>
       </div>
     </section>
     <section class="mx-auto w-[90%]">
@@ -301,9 +519,9 @@
           Latin literature from 45 BC, making it over 2000 years old.
         </p>
       </div>
-      <!-- Text and Image container -->
+    
       <div class="my-8 grid mx-auto w-[90%] lg:flex">
-        <!-- container 01 -->
+  
         <div>
           <div class="flex items-center gap-4">
             <div
@@ -369,11 +587,11 @@
             </div>
           </div>
         </div>
-        <!-- container 02 -->
+        
         <div class="flex items-center">
           <img src="./images/whychoose1.png" alt="" />
         </div>
-        <!-- container 03 -->
+        
         <div>
           <div class="flex flex-row-reverse items-center gap-4">
             <div
